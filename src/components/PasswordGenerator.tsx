@@ -4,7 +4,7 @@ import { Switch } from "@/components/ui/switch";
 import { Button } from "@/components/ui/button";
 import { useToast } from "@/components/ui/use-toast";
 import { generatePassword, calculateStrength } from "@/lib/password";
-import { Copy, RefreshCw } from "lucide-react";
+import { Copy, RefreshCw, Key } from "lucide-react";
 
 const PasswordGenerator = () => {
   const { toast } = useToast();
@@ -32,33 +32,33 @@ const PasswordGenerator = () => {
 
   const strength = calculateStrength(password, options);
   const getStrengthColor = () => {
-    if (strength < 25) return "bg-red-500";
-    if (strength < 50) return "bg-orange-500";
-    if (strength < 75) return "bg-yellow-500";
-    return "bg-green-500";
+    if (strength < 25) return "bg-destructive";
+    if (strength < 50) return "bg-accent";
+    if (strength < 75) return "bg-ring";
+    return "bg-primary";
   };
 
   return (
-    <div className="w-full max-w-md p-6 backdrop-blur-xl bg-white/10 rounded-xl shadow-xl animate-fade-in">
-      <h2 className="text-2xl font-bold text-white mb-6">Password Generator</h2>
+    <div className="w-full max-w-md p-6 bg-card border border-border rounded-xl shadow-sm animate-fade-in">
+      <h1 className="text-2xl font-bold text-foreground mb-6 flex items-center gap-2"><Key className="h-6 w-6" aria-hidden="true" /> Password Generator</h1>
       
-      <div className="bg-white/20 p-4 rounded-lg mb-6">
+      <div className="bg-muted p-4 rounded-lg mb-6">
         <div className="flex items-center gap-2">
-          <code className="font-mono text-xl text-white flex-1 overflow-x-auto">
+          <code className="font-mono text-xl text-foreground flex-1 overflow-x-auto">
             {password || "Click generate"}
           </code>
           <Button
             variant="ghost"
             size="icon"
             onClick={handleCopy}
-            className="hover:bg-white/20"
+            className="hover:bg-accent"
             disabled={!password}
           >
-            <Copy className="h-4 w-4 text-white" />
+            <Copy className="h-4 w-4 text-foreground" />
           </Button>
         </div>
         
-        <div className="mt-2 h-2 rounded-full bg-white/20 overflow-hidden">
+        <div className="mt-2 h-2 rounded-full bg-muted overflow-hidden">
           <div
             className={`h-full ${getStrengthColor()} transition-all duration-500`}
             style={{ width: `${strength}%` }}
@@ -68,7 +68,7 @@ const PasswordGenerator = () => {
 
       <div className="space-y-6">
         <div className="space-y-2">
-          <label className="text-white text-sm">Password Length: {length[0]}</label>
+          <label className="text-sm text-muted-foreground">Password Length: {length[0]}</label>
           <Slider
             value={length}
             onValueChange={setLength}
@@ -82,7 +82,7 @@ const PasswordGenerator = () => {
         <div className="space-y-3">
           {Object.entries(options).map(([key, value]) => (
             <div key={key} className="flex items-center justify-between">
-              <label className="text-white capitalize">{key}</label>
+              <label className="capitalize text-foreground">{key}</label>
               <Switch
                 checked={value}
                 onCheckedChange={(checked) =>
@@ -94,7 +94,7 @@ const PasswordGenerator = () => {
         </div>
 
         <Button
-          className="w-full bg-white/20 hover:bg-white/30 text-white"
+          className="w-full"
           onClick={handleGenerate}
         >
           <RefreshCw className="mr-2 h-4 w-4" />
