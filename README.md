@@ -2,7 +2,8 @@
 
 A modern, minimal black & white password generator built with React, Vite, TypeScript, Tailwind CSS, and shadcn/ui. Generate strong, secure passwords with adjustable length, character set options, a live strength meter, and one-click copy.
 
-<img width="665" height="549" alt="Capture" src="https://github.com/user-attachments/assets/9dec4a97-ad8e-48f5-9fdf-9f67e28732ce" />
+<img width="1233" height="573" alt="image" src="https://github.com/user-attachments/assets/2ad19646-3eb4-4af6-a752-43dcef83751e" />
+
 
 
 ## Features
