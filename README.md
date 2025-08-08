@@ -1,69 +1,59 @@
-# Welcome to your Lovable project
+# Password Generator
 
-## Project info
+A modern, minimal black & white password generator built with React, Vite, TypeScript, Tailwind CSS, and shadcn/ui. Generate strong, secure passwords with adjustable length, character set options, a live strength meter, and one-click copy.
 
-**URL**: https://lovable.dev/projects/fdb937a7-19de-4c75-8d55-8f07fe97d439
+## Features
+- Generate strong passwords instantly
+- Adjustable length slider (8–64)
+- Toggle character sets: uppercase, lowercase, numbers, symbols
+- Password strength meter with visual feedback
+- One-click copy to clipboard with toasts
+- Clean, responsive UI using a neat black & white theme
 
-## How can I edit this code?
+## Tech Stack
+- React + TypeScript + Vite
+- Tailwind CSS with semantic design tokens
+- shadcn/ui components (Radix under the hood)
 
-There are several ways of editing your application.
+## Getting Started
+1. Clone the repo
+   git clone <YOUR_REPO_URL>
+   cd <YOUR_PROJECT_NAME>
+2. Install dependencies
+   npm i
+3. Run the development server
+   npm run dev
+4. Build for production
+   npm run build
+5. Preview production build
+   npm run preview
 
-**Use Lovable**
+## Project Structure
+- src/pages/Index.tsx – App entry page
+- src/components/PasswordGenerator.tsx – Main feature component
+- src/lib/password.ts – Password generation and strength logic
+- src/components/ui/* – Reusable UI components (shadcn/ui)
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/fdb937a7-19de-4c75-8d55-8f07fe97d439) and start prompting.
+## SEO
+- Title tag: password-generator
+- Semantic HTML and accessible components
+- Descriptive alt text for images and clean metadata
 
-Changes made via Lovable will be committed automatically to this repo.
+## Deploy
+- You can publish directly from Lovable (Share → Publish)
+- Or deploy the built files (dist) to your preferred hosting provider (e.g., Netlify, Vercel)
 
-**Use your preferred IDE**
+## GitHub: How to upload this project
+- From Lovable: connect GitHub (top-right → GitHub), create/select a repo, and sync.
+- Or locally:
+  - Initialize repo and push
+    git init
+    git add .
+    git commit -m "feat: password generator"
+    git branch -M main
+    git remote add origin https://github.com/<your-username>/<your-repo>.git
+    git push -u origin main
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## License
+MIT
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with .
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/fdb937a7-19de-4c75-8d55-8f07fe97d439) and click on Share -> Publish.
-
-## I want to use a custom domain - is that possible?
-
-We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: [Custom domains](https://docs.lovable.dev/tips-tricks/custom-domain/)
