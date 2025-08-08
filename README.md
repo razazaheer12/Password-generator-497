@@ -1,4 +1,4 @@
-# Password Generator
+# Password Generator 🔒🔑
 
 A modern, minimal black & white password generator built with React, Vite, TypeScript, Tailwind CSS, and shadcn/ui. Generate strong, secure passwords with adjustable length, character set options, a live strength meter, and one-click copy.
 
