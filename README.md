@@ -40,7 +40,7 @@ A modern, minimal black & white password generator built with React, Vite, TypeS
 - Descriptive alt text for images and clean metadata
 
 ## Deploy
-- You can publish directly (Share → Publish)
+- You can publish directly from lovable (Share → Publish)
 - Or deploy the built files (dist) to your preferred hosting provider (e.g., Netlify, Vercel)
 
 ## GitHub: How to upload this project
