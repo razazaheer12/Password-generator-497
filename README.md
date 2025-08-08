@@ -66,10 +66,9 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 This project is open source and available under the [MIT License](LICENSE).
 
----
 ## Author
 
-Made with razazaheer12 ❤️ and cutting-edge web technologies.
+razazaheer12 ❤️ 
 
 
 
