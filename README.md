@@ -40,11 +40,11 @@ A modern, minimal black & white password generator built with React, Vite, TypeS
 - Descriptive alt text for images and clean metadata
 
 ## Deploy
-- You can publish directly from Lovable (Share → Publish)
+- You can publish directly (Share → Publish)
 - Or deploy the built files (dist) to your preferred hosting provider (e.g., Netlify, Vercel)
 
 ## GitHub: How to upload this project
-- From Lovable: connect GitHub (top-right → GitHub), create/select a repo, and sync.
+-  connect GitHub (top-right → GitHub), create/select a repo, and sync.
 - Or locally:
   - Initialize repo and push
     git init
@@ -54,6 +54,22 @@ A modern, minimal black & white password generator built with React, Vite, TypeS
     git remote add origin https://github.com/<your-username>/<your-repo>.git
     git push -u origin main
 
-## License
-MIT
+    ## 🌐 Demo
+
+Visit the live demo: [Password Generator](https://password-generator-497.lovable.app/)
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+---
+## Author
+
+Made with razazaheer12 ❤️ and cutting-edge web technologies.
+
+
 
